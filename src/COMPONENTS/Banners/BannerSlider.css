@@ -1,0 +1,71 @@
+/*  */
+
+.bannerSlider {
+  width: 100%;
+  overflow: hidden;
+  height: 60vh;
+  position: relative;
+}
+
+.bannerSlider .imageContainer {
+  background-color: black;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.bannerSlider .imageContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerSlider .imageContainer .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.bannerSlider .imageContainer h1 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+.bannerSlider .imageContainer span {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+.bannerSlider .imageContainer button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.bannerSlider .imageContainer button:hover {
+  background-color: var(--col1);
+  color: white;
+}
