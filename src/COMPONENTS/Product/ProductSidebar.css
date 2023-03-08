@@ -1,0 +1,8 @@
+/* */
+
+.ProductSidebar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
