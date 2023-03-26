@@ -1,10 +1,14 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import "./AllProduct.css";
-import img1 from "../../ASSETS/Images/1.png";
-import img2 from "../../ASSETS/Images/2.png";
-import img3 from "../../ASSETS/Images/3.png";
-import img4 from "../../ASSETS/Images/4.png";
+import img1 from "../../ASSETS/Products/1.png";
+import img2 from "../../ASSETS/Products/2.png";
+import img3 from "../../ASSETS/Products/3.png";
+import img4 from "../../ASSETS/Products/4.png";
+import img5 from "../../ASSETS/Products/5.png";
+import img6 from "../../ASSETS/Products/6.png";
+import img7 from "../../ASSETS/Products/7.png";
+import img8 from "../../ASSETS/Products/8.png";
 
 function AllProduct() {
   const product = [
@@ -42,7 +46,7 @@ function AllProduct() {
     },
     {
       id: 5,
-      productimage: img1,
+      productimage: img5,
       productname: "Product 5",
       productprice: 100,
       counttype: "1 each",
@@ -50,7 +54,7 @@ function AllProduct() {
     },
     {
       id: 6,
-      productimage: img2,
+      productimage: img6,
       productname: "Product 6",
       productprice: 200,
       counttype: "1 per kg",
@@ -58,7 +62,7 @@ function AllProduct() {
     },
     {
       id: 7,
-      productimage: img3,
+      productimage: img7,
       productname: "Product 7",
       productprice: 300,
       counttype: "1 per kg",
@@ -66,7 +70,7 @@ function AllProduct() {
     },
     {
       id: 8,
-      productimage: img4,
+      productimage: img8,
       productname: "Product 8",
       productprice: 400,
       counttype: "1 per kg",
@@ -74,7 +78,7 @@ function AllProduct() {
     },
     {
       id: 9,
-      productimage: img1,
+      productimage: img4,
       productname: "Product 9",
       productprice: 100,
       counttype: "1 each",

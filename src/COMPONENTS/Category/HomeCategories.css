@@ -12,7 +12,7 @@
 .HomeCategories .HomeContainer {
   width: 24%;
   min-width: 300px;
-  height: 300px;
+  height: 180px;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -36,9 +36,10 @@
 }
 
 .HomeCategories .HomeContainer .content h1 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   margin: 0;
+  padding: 0px;
 }
 
 .HomeCategories .HomeContainer .content p {

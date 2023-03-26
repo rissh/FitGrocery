@@ -1,0 +1,43 @@
+/**/
+
+.FooterBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: rgb(240, 240, 240);
+  height: 350px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.FooterBanner .Left {
+  width: 45%;
+}
+
+.FooterBanner .Left .img {
+  width: 100%;
+}
+
+.FooterBanner .Right {
+  width: 45%;
+}
+
+.FooterBanner .Right .Text {
+  width: 100%;
+}
+
+.FooterBanner .Right .h1 {
+  width: 80%;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.FooterBanner .Right .p {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}

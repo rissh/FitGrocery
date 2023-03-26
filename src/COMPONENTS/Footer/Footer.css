@@ -1,0 +1,210 @@
+/**/
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* Section1 CSS Start */
+.Footer .Section1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+
+.Section1 div {
+  width: 20%;
+  min-width: 200px;
+}
+
+.Section1 .Info {
+  width: 15%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Section1 .Info p {
+  font-size: 16px;
+  color: #2f2f2f;
+  font-weight: 200;
+  width: 100%;
+}
+
+.Footer .Section1 img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* About Us Section CSS Start */
+.Section1 .AboutUs {
+  padding-top: 20px;
+}
+
+.Section1 .AboutUs h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.Section1 .AboutUs p {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 3px 0px;
+  color: #424242;
+  width: 90%;
+}
+
+.Section1 .AboutUs p:hover {
+  cursor: pointer;
+  color: var(--col1);
+}
+/* AboutUs Section CSS End */
+/* OurInfo Section CSS Start */
+
+.Section1 .OurInfo {
+  padding-top: 20px;
+}
+
+.Section1 .OurInfo h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.Section1 .OurInfo p {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 3px 0px;
+  color: #424242;
+  width: 90%;
+}
+
+.Section1 .OurInfo p:hover {
+  cursor: pointer;
+  color: var(--col1);
+}
+/* OurInfo Section CSS End */
+/* Community Section CSS Start */
+
+.Section1 .Community {
+  padding-top: 20px;
+}
+
+.Section1 .Community h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.Section1 .Community p {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 3px 0px;
+  color: #424242;
+  width: 90%;
+}
+
+.Section1 .Community p:hover {
+  cursor: pointer;
+  color: var(--col1);
+}
+/* Community Section CSS End */
+/* Subscribe Section CSS Start */
+
+.Section1 .Subscribe {
+  padding-top: 20px;
+}
+
+.Section1 .Subscribe h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.Section1 .Subscribe p {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 3px 0px;
+  color: #424242;
+  width: 90%;
+}
+
+.Section1 .Subscribe p:hover {
+  cursor: pointer;
+  color: var(--col1);
+}
+
+.Section1 .Subscribe .inputcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 220px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  margin: 10px 0px;
+  padding: 5px 5px;
+}
+
+.Section1 .icon1 {
+  /* background-color: aqua; */
+  /* max-width: 40px; */
+}
+
+.Section1 .icon1 svg {
+  width: 20px;
+  height: 20px;
+  color: #848484;
+  cursor: pointer;
+  /* background-color: aqua; */
+}
+
+.Section1 .icon2 svg {
+  width: 20px;
+  height: 20px;
+  color: var(--col1);
+  cursor: pointer;
+}
+
+.Section1 .Subscribe .inputcontainer input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 200;
+  color: #424242;
+}
+/* Section1 CSS End */
+/* Section2 CSS Start */
+
+.Section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.Section2 h3 {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.Section2 img {
+  width: 300px;
+}
+
+/* Section2 CSS End */

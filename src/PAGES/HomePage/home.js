@@ -1,6 +1,8 @@
 import React from "react";
 import BannerSlider from "../../COMPONENTS/Banners/BannerSlider";
 import HomeCategories from "../../COMPONENTS/Category/HomeCategories";
+import FooterBanner from "../../COMPONENTS/Footer/FooterBanner";
+import Footer from "../../COMPONENTS/Footer/Footer";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import ProductSidebar from "../../COMPONENTS/Product/ProductSidebar";
 
@@ -11,6 +13,8 @@ const home = () => {
       <BannerSlider />
       <HomeCategories />
       <ProductSidebar />
+      <FooterBanner />
+      <Footer />
     </div>
   );
 };
