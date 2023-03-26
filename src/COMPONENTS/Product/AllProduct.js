@@ -76,22 +76,6 @@ function AllProduct() {
       counttype: "1 per kg",
       discountprecent: 12,
     },
-    {
-      id: 9,
-      productimage: img4,
-      productname: "Product 9",
-      productprice: 100,
-      counttype: "1 each",
-      discountprecent: 12,
-    },
-    {
-      id: 10,
-      productimage: img2,
-      productname: "Product 10",
-      productprice: 200,
-      counttype: "1 per kg",
-      discountprecent: 12,
-    },
   ];
 
   return (
