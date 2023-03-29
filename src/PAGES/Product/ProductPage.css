@@ -1,0 +1,162 @@
+/**/
+/* Back ButtonContainer  */
+.ProductPage .pc1 {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.ProductPage .goback {
+  background-color: var(--col1);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 10px 0px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  min-width: 100px;
+}
+
+.ProductPage .goback svg {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.ProductPage .goback:hover {
+  background-color: black;
+}
+
+.ProductPage .pc1 .c11 {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
+}
+
+.ProductPage .pc1 .c11 .imgset {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.ProductPage .pc1 .c11 .imgset img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.ProductPage .pc1 .c11 .imgset .active {
+  border: 5px solid var(--col1);
+  width: 95%;
+}
+
+.ProductPage .pc1 .c11 .imgbig {
+  width: 70%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.ProductPage .pc1 .c12 {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+
+.ProductPage .pc1 .c12 .c121 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ProductPage .pc1 .c12 .price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--col1);
+  display: flex;
+  align-items: center;
+}
+
+.ProductPage .pc1 .c12 .price span {
+  font-size: 20px;
+  font-weight: 400;
+  color: gray;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.ProductPage .pc1 .c12 .incrdecr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 150px;
+  border: 1px solid var(--col1);
+  border-radius: 5px;
+}
+
+.ProductPage .pc1 .c12 .incrdecr button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: var(--col1);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ProductPage .pc1 .c12 .incrdecr p {
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.ProductPage .btncont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.ProductPage .btncont button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: var(--col1);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ProductPage .btncont button:hover {
+  background-color: black;
+}
+
+/**/
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+/**/
+/**/
+/**/
