@@ -1,8 +1,17 @@
+/**/
+:root {
+  --col1: #7bc143;
+  --col2: #f8ca4d;
+  --col3: #f48e4c;
+}
+
+/*
 :root {
   --col1: #7ed957;
   --col2: gray;
   --col3: #cecece;
 }
+*/
 
 * {
   margin: 0;
