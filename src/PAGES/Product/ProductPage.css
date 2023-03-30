@@ -147,10 +147,232 @@
 }
 
 /**/
+/**/
 
+.ProductPage .pc2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.ProductPage .pc2 .tabs {
+  display: flex;
+  margin: 20px 0px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProductPage .pc2 .tabs .active {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--col1);
+  cursor: pointer;
+  border-bottom: 2px solid var(--col1);
+  margin: 0px 10px;
+  background-color: white;
+}
+
+.ProductPage .pc2 .tabs .inactive {
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: gray;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin: 0px 10px;
+  background-color: white;
+}
+
+.ProductPage .reviewcont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.ProductPage form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-start;
+  width: 70%;
+  max-width: 700px;
+}
+
+.ProductPage form .fromgroup {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.ProductPage .reviewcont form div label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--col1);
+}
+
+.ProductPage .reviewcont form div input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--col1);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.ProductPage .reviewcont form div textarea {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid var(--col1);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.ProductPage .reviewcont button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: var(--col1);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+
+.ProductPage .reviewcont button:hover {
+  background-color: black;
+}
+
+.ProductPage .allreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 700px;
+  margin-top: 50px;
+}
+
+.ProductPage .allreview .head1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--col1);
+  font-weight: 300;
+  font-size: 25px;
+  color: var(--col1);
+}
+
+.ProductPage .allreview .review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.ProductPage .reviewhead {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 0px;
+  position: relative;
+}
+.ProductPage .reviewhead p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  color: var(--col1);
+  position: absolute;
+  left: 0px;
+}
+.ProductPage .reviewhead span {
+  background-color: var(--col1);
+  margin: 0px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  margin-left: 10px;
+}
+
+.ProductPage .reviewbody {
+  font-size: 14px;
+}
+
+.ProductPage .desc {
+  width: 70%;
+  max-width: 900px;
+  align-self: center;
+}
 /**/
-/**/
-/**/
+
+.ProductPage .rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.ProductPage .rating .starinactive {
+  color: lightgray;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.ProductPage .rating .starinactive:hover {
+  color: var(--col1);
+}
+
+.ProductPage .rating .staractive {
+  color: gold;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  fill: gold;
+}
+
+.ProductPage .rating1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.ProductPage .rating1 .starinactive {
+  color: lightgray;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.ProductPage .rating1 .starinactive:hover {
+  color: var(--col1);
+}
+
+.ProductPage .rating1 .staractive {
+  color: gold;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  fill: gold;
+}
+
+.ProductPage .SliderContainer {
+  width: 100%;
+  padding: 20px;
+}
 /**/
 /**/
 /**/
