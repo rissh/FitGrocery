@@ -5,9 +5,13 @@ import "./App.css";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// Importing components
 import ProductPage from "./PAGES/Product/ProductPage";
 import About from "./PAGES/Extra/About";
 import Contact from "./PAGES/Extra/Contact";
+import Login from "./PAGES/Auth/Login";
+import Signup from "./PAGES/Auth/Signup";
+import ForgotPassword from "./PAGES/Auth/ForgotPassword";
 
 const App = () => {
   return (
@@ -18,6 +22,9 @@ const App = () => {
         <Route path="/product/:prodid" element={<ProductPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route
           path="*"
           element={

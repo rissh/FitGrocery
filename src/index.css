@@ -16,3 +16,8 @@ code {
   width: 100%;
   padding: 20px;
 }
+
+.stylenone {
+  text-decoration: none;
+  color: inherit;
+}
