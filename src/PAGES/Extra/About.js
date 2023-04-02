@@ -3,6 +3,8 @@ import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import SingleBanner from "../../COMPONENTS/Banners/SingleBanner";
 import FooterBanner from "../../COMPONENTS/Footer/FooterBanner";
 import Footer from "../../COMPONENTS/Footer/Footer";
+import Banner4 from "../../ASSETS/Banner/Banner4.jpg";
+import Banner5 from "../../ASSETS/Banner/Banner5.jpg";
 import "./ExtraPages.css";
 
 const About = () => {
