@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import "./ProductPage.css";
 import img1 from "../../ASSETS/Images/1.png";
 import img2 from "../../ASSETS/Images/2.png";
@@ -189,13 +190,61 @@ const ProductPage = () => {
     },
   ];
 
+  const [reloadnavbar, setreloadnavbar] = React.useState(false);
+
+  const addtocart = () => {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+
+    if (cart) {
+      // alert('1 item is already added to cart')
+      let itemincart = cart.find(
+        (item) => item.productdata.ProductId === productdata.ProductId
+      );
+      if (itemincart) {
+        cart = cart.map((item) => {
+          if (item.productdata.ProductId === productdata.ProductId) {
+            return {
+              ...item,
+              quantity: item.quantity + count,
+            };
+          } else {
+            return item;
+          }
+        });
+        localStorage.setItem("cart", JSON.stringify(cart));
+      } else {
+        cart = [
+          ...cart,
+          {
+            productdata,
+            quantity: count,
+          },
+        ];
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+    } else {
+      cart = [
+        {
+          productdata,
+          quantity: count,
+        },
+      ];
+
+      // console.log(cart)
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+    setreloadnavbar(!reloadnavbar);
+    // window.location.reload()
+    toast.success("Item added to cart");
+  };
+
   return (
     <div className="ProductPage">
       {/*
       <h1>Product id is - {prodid}</h1>
       <p>{JSON.stringify(productdata)}</p>
   */}
-      <Navbar />
+      <Navbar reloadnavbar={reloadnavbar} />
       <div className="pc1">
         <Link to="/">
           <button className="goback">
@@ -277,7 +326,7 @@ const ProductPage = () => {
             <button>Add to Cart</button>
             <button
               onClick={() => {
-                alert("Buy Now");
+                addtocart();
               }}
             >
               Buy Now

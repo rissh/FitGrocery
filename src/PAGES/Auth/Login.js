@@ -7,7 +7,7 @@ import Footer from "../../COMPONENTS/Footer/Footer";
 const Login = () => {
   return (
     <div className="AuthPage">
-      <Navbar />
+      <Navbar reloadnavbar={false} />
 
       <div className="AuthContainer">
         <img

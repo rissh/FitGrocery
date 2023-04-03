@@ -9,7 +9,7 @@ const Contact = () => {
   const [rating, setrating] = React.useState(0);
   return (
     <div className="ExtraPage">
-      <Navbar />
+      <Navbar reloadnavbar={false} />
       <SingleBanner
         heading="Contact Us"
         BannerImage="https://images.pexels.com/photos/2449665/pexels-photo-2449665.jpeg?auto=compress&cs=tinysrgb&w=800"

@@ -6,7 +6,7 @@ import "./AuthPage.css";
 const ForgotPassword = () => {
   return (
     <div className="AuthPage">
-      <Navbar />
+      <Navbar reloadnavbar={false} />
 
       <div className="AuthContainer">
         <img

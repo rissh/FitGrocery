@@ -1,14 +1,61 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import "./ProductCard.css";
 
 const ProductCard = ({ data }) => {
   const [show, setshow] = useState(false);
-  const [quantity, setquantity] = useState(1);
+  const [count, setCount] = useState(1);
 
   //const getproductid = () => {
   //  alert(data.id);
   //};
+
+  const addtocart = () => {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    let productdata = data;
+    if (cart) {
+      // alert('1 item is already added to cart')
+      let itemincart = cart.find(
+        (item) => item.productdata.ProductId === productdata.ProductId
+      );
+      if (itemincart) {
+        cart = cart.map((item) => {
+          if (item.productdata.ProductId === productdata.ProductId) {
+            return {
+              ...item,
+              quantity: item.quantity + count,
+            };
+          } else {
+            return item;
+          }
+        });
+        localStorage.setItem("cart", JSON.stringify(cart));
+      } else {
+        cart = [
+          ...cart,
+          {
+            productdata,
+            quantity: count,
+          },
+        ];
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+    } else {
+      cart = [
+        {
+          productdata,
+          quantity: count,
+        },
+      ];
+
+      // console.log(cart)
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+    // setreloadnavbar(!reloadnavbar)
+    window.location.reload();
+    // toast.success('Item added to cart')
+  };
 
   return (
     <div className="Product">
@@ -31,22 +78,22 @@ const ProductCard = ({ data }) => {
           <div className="quantity">
             <button
               onClick={() => {
-                if (quantity > 1) {
-                  setquantity(quantity - 1);
+                if (count > 1) {
+                  setCount(count - 1);
                 }
               }}
             >
               -
             </button>
-            <p>{quantity}</p>
-            <button onClick={() => setquantity(quantity + 1)}>+</button>
+            <p>{count}</p>
+            <button onClick={() => setCount(count + 1)}>+</button>
           </div>
           <button
             className="AddtoCart"
             onClick={() => {
               setshow(false);
-              //quantity(1)
-              alert("Added to cart");
+              // setCount(1)
+              addtocart();
             }}
           >
             Add to Cart

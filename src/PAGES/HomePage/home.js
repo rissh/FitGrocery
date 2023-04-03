@@ -84,7 +84,7 @@ const home = () => {
   ];
   return (
     <div>
-      <Navbar />
+      <Navbar reloadnavbar={false} />
       <BannerSlider />
       <HomeCategories />
       <ProductSidebar />
