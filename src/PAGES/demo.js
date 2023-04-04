@@ -47,30 +47,19 @@ const products = [
     ProductReviews: [
       {
         ReviewId: 1,
-        Name: "Harshal Jain",
-        Email: "",
-        Rating: 5,
-        Date: "2021-08-01",
-        Review:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        Name: "Alice",
+        Email: "alice@example.com",
+        Rating: 4,
+        Date: "2022-02-15",
+        Review: "These apples are really tasty!",
       },
       {
         ReviewId: 2,
-        Name: "Viraj",
-        Email: "",
-        Rating: 1,
-        Date: "2021-08-01",
-        Review:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      },
-      {
-        ReviewId: 3,
-        Name: "Harshal Jain",
-        Email: "",
-        Rating: 4,
-        Date: "2021-08-01",
-        Review:
-          "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        Name: "Bob",
+        Email: "bob@example.com",
+        Rating: 5,
+        Date: "2022-02-20",
+        Review: "I love these apples, they're the best I've ever had!",
       },
     ],
   },
