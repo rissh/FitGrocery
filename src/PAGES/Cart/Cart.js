@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import FooterBanner from "../../COMPONENTS/Footer/FooterBanner";
 import Footer from "../../COMPONENTS/Footer/Footer";
 import SingleBanner from "../../COMPONENTS/Banners/SingleBanner";
 
 const Cart = () => {
+  const getcartitemsfromlocalstorage = () => {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (cart) {
+      console.log(cart);
+    } else {
+      console.log("Cart is Empty");
+    }
+  };
+
+  React.useEffect(() => {
+    getcartitemsfromlocalstorage();
+  }, []);
   return (
     <div>
       <Navbar />

@@ -59,16 +59,18 @@ const ProductCard = ({ data }) => {
 
   return (
     <div className="Product">
-      <div className="Section1">
-        <img src={data.productimage} alt={"no img"} />
-      </div>
+      <Link tp={`/product/${data.id}`}>
+        <div className="Section1">
+          <img src={data.ProductImage[0].image} alt={"no img"} />
+        </div>
+      </Link>
       <div className="Section2">
         <h3>
           ${" "}
-          {data.productprice - (data.productprice * data.discountprecent) / 100}
-          <span>${data.productprice}</span>
+          {data.ProductPrice - (data.ProductPrice * data.ProductDiscount) / 100}
+          <span>${data.ProductPrice}</span>
         </h3>
-        <p>{data.productname}</p>
+        <p>{data.ProductName}</p>
       </div>
       <div className="Section3">
         <p>{data.counttype}</p>
