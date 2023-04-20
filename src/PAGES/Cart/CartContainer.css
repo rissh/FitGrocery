@@ -1,0 +1,129 @@
+/**/
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  max-width: 1200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.383);
+  margin: 20px;
+}
+.cartContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cartContainer table .cartitemrow td {
+  padding: 10px 0;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* .cartcont table .cartitemrow th {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--col3);
+} */
+
+.cartContainer table .cartitemrow {
+  border-bottom: 1px solid #e0e0e0;
+}
+.cartContainer table tr img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cartContainer .cartproduct {
+  display: flex;
+  width: 300px;
+  cursor: pointer;
+  align-items: center;
+}
+.cartContainer .cartproduct p {
+  margin: 0;
+  padding: 0px;
+}
+
+.cartContainer .quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.cartContainer .quantity button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: var(--col1);
+  color: var(--col3);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+
+.cartContainer .quantity span {
+  width: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: white;
+  color: var(--col1);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cartContainer .delbtn {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--col1);
+  margin-left: 10px;
+}
+
+.cartContainer .totaltableleft {
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--col1);
+}
+.cartContainer .totaltableright {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--col2);
+}
+
+.emptyCart {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.emptyCart svg {
+  width: 100px;
+  height: 100px;
+  color: var(--col1);
+}
+
+.emptyCart p {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--col2);
+  margin: 0px;
+  padding: 0px;
+}

@@ -5,9 +5,10 @@ import Footer from "../../COMPONENTS/Footer/Footer";
 import SingleBanner from "../../COMPONENTS/Banners/SingleBanner";
 import "./Cart.css";
 import "./Progress.css";
+import "./CartContainer.css";
 
 const Cart = () => {
-  const [cartdata, setcardata] = React.useState([]);
+  const [cartdata, setcartdata] = React.useState([]);
   const [subtotal, setsubtotal] = React.useState([]);
   const [shipping, setshipping] = React.useState([]);
   const [tax, settax] = React.useState([]);
@@ -17,7 +18,7 @@ const Cart = () => {
     let cart = JSON.parse(localStorage.getItem("cart"));
     if (cart) {
       console.log(cart);
-      setcardata(cart);
+      setcartdata(cart);
 
       let tempsubtotal = 0;
       cart.forEach((item) => {
@@ -27,8 +28,10 @@ const Cart = () => {
       setsubtotal(tempsubtotal);
       setshipping(80);
       settax(tempsubtotal * 0.18 + 80 * 0.1);
+      setreloadnavbar(!reloadnavbar);
     } else {
       console.log("Cart is Empty");
+      setreloadnavbar(!reloadnavbar);
     }
   };
 
@@ -40,9 +43,19 @@ const Cart = () => {
     return true;
   };
 
+  const [reloadnavbar, setreloadnavbar] = React.useState(false);
+  const removeitemfromcart = (index) => {
+    // alert(index)
+    let temp = [...cartdata];
+    temp.splice(index, 1);
+    setcartdata(temp);
+    localStorage.setItem("cart", JSON.stringify(temp));
+    getcartitemsfromlocalstorage();
+  };
+
   return (
     <div>
-      <Navbar />
+      <Navbar reloadnavbar={reloadnavbar} />
       <SingleBanner
         heading="Your Cart"
         BannerImage="https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -53,7 +66,7 @@ const Cart = () => {
             <div
               className="Sec1"
               onClick={() => {
-                checklogin() && setactive(1);
+                cartdata.length > 0 && checklogin() && setactive(1);
               }}
             >
               <svg
@@ -76,7 +89,7 @@ const Cart = () => {
             <div
               className="Sec2"
               onClick={() => {
-                checklogin() && setactive(1);
+                cartdata.length > 0 && checklogin() && setactive(1);
               }}
             >
               <svg
@@ -101,7 +114,7 @@ const Cart = () => {
             <div
               className="Sec1"
               onClick={() => {
-                checklogin() && setactive(2);
+                cartdata.length > 0 && checklogin() && setactive(2);
               }}
             >
               <svg
@@ -130,7 +143,7 @@ const Cart = () => {
             <div
               className="Sec2"
               onClick={() => {
-                checklogin() && setactive(2);
+                cartdata.length > 0 && checklogin() && setactive(2);
               }}
             >
               <svg
@@ -161,7 +174,7 @@ const Cart = () => {
             <div
               className="Sec1"
               onClick={() => {
-                checklogin() && setactive(3);
+                cartdata.length > 0 && checklogin() && setactive(3);
               }}
             >
               <svg
@@ -185,7 +198,7 @@ const Cart = () => {
             <div
               className="Sec2"
               onClick={() => {
-                checklogin() && setactive(3);
+                cartdata.length > 0 && checklogin() && setactive(3);
               }}
             >
               <svg
@@ -210,7 +223,7 @@ const Cart = () => {
             <div
               className="Sec1"
               onClick={() => {
-                checklogin() && setactive(4);
+                cartdata.length > 0 && checklogin() && setactive(4);
               }}
             >
               <svg
@@ -234,7 +247,7 @@ const Cart = () => {
             <div
               className="Sec2"
               onClick={() => {
-                checklogin() && setactive(4);
+                cartdata.length > 0 && checklogin() && setactive(4);
               }}
             >
               <svg
@@ -256,9 +269,179 @@ const Cart = () => {
             </div>
           )}
         </div>
+
         {active == 1 && (
           <div className="cartContainer">
-            <p>Cart cont</p>
+            {cartdata.length > 0 ? (
+              <table className="carttable">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cartdata.map((item, index) => {
+                    return (
+                      <tr key={index} className="cartitemrow">
+                        <td>
+                          <div
+                            className="cartproduct"
+                            onClick={() => {
+                              window.location.href = `/product/${item.productdata.ProductId}`;
+                            }}
+                          >
+                            <img
+                              src={item.productdata.ProductImage[0].image}
+                              alt={item.productdata.ProductName}
+                            />
+                            <p>{item.productdata.ProductName}</p>
+                          </div>
+                        </td>
+
+                        <td>
+                          <div className="quantity">
+                            <button
+                              className="minus"
+                              onClick={() => {
+                                let newcartdata = [...cartdata];
+
+                                if (newcartdata[index].quantity > 1) {
+                                  newcartdata[index].quantity -= 1;
+                                  setcartdata(newcartdata);
+                                  localStorage.setItem(
+                                    "cart",
+                                    JSON.stringify(newcartdata)
+                                  );
+                                  getcartitemsfromlocalstorage();
+                                }
+                              }}
+                            >
+                              -
+                            </button>
+                            <span>{item.quantity}</span>
+                            <button
+                              className="plus"
+                              onClick={() => {
+                                let newcartdata = [...cartdata];
+                                newcartdata[index].quantity += 1;
+                                setcartdata(newcartdata);
+                                localStorage.setItem(
+                                  "cart",
+                                  JSON.stringify(newcartdata)
+                                );
+                                getcartitemsfromlocalstorage();
+                              }}
+                            >
+                              +
+                            </button>
+                          </div>
+                        </td>
+
+                        <td>
+                          <p>
+                            ${" "}
+                            {item.productdata.SalesPrice
+                              ? item.productdata.SalesPrice.toFixed(2)
+                              : 0.0}
+                          </p>
+                        </td>
+
+                        <td>
+                          <p>
+                            ${" "}
+                            {(
+                              item.productdata.SalesPrice * item.quantity
+                            ).toFixed(2)}
+                          </p>
+                        </td>
+
+                        <td>
+                          <div
+                            className="delbtn"
+                            onClick={() => {
+                              removeitemfromcart(index);
+                            }}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td className="totaltableleft">Sub-Total</td>
+                    <td className="totaltableright">$ {subtotal.toFixed(2)}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td className="totaltableleft">Shipping</td>
+                    <td className="totaltableright">$ {shipping.toFixed(2)}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td className="totaltableleft">Total</td>
+                    <td className="totaltableright">
+                      $ {(subtotal + shipping).toFixed(2)}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td className="totaltableleft">Tax</td>
+                    <td className="totaltableright">$ {tax.toFixed(2)}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td className="totaltableleft">Net-Total</td>
+                    <td className="totaltableright">
+                      $ {(tax + subtotal + shipping).toFixed(2)}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            ) : (
+              <div className="emptyCart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                  />
+                </svg>
+
+                <p>Your cart is empty</p>
+              </div>
+            )}
           </div>
         )}
 
@@ -277,6 +460,8 @@ const Cart = () => {
             <p>Order successfull</p>
           </div>
         )}
+
+        {/* Buttons */}
 
         {active == 1 && cartdata.length > 0 && (
           <div className="btns">
