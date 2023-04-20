@@ -16,3 +16,23 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/**/
+/**/
+
+@media (max-width: 950px) {
+  .AllProduct {
+    width: 60%;
+  }
+}
+
+/**/
+/**/
+
+@media (max-width: 650px) {
+  .AllProduct {
+    width: 100%;
+  }
+}
+
+/**/

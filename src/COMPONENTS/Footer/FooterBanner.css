@@ -41,3 +41,14 @@
   font-weight: 300;
   margin-bottom: 10px;
 }
+
+/**/
+/**/
+
+@media (max-width: 650px) {
+  .FooterBanner {
+    display: none;
+  }
+}
+
+/**/

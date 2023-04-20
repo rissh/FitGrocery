@@ -3,7 +3,6 @@
 .bannerSlider {
   width: 100%;
   overflow: hidden;
-  height: 60vh;
   position: relative;
 }
 
@@ -69,3 +68,26 @@
   background-color: var(--col1);
   color: white;
 }
+
+/**/
+@media (max-width: 768px) {
+  .bannerSlider .imageContainer {
+    height: 50vh;
+  }
+
+  .bannerSlider .imageContainer h1 {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
+  .bannerSlider .imageContainer span {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .bannerSlider .imageContainer button {
+    font-size: 1rem;
+  }
+}
+
+/**/
