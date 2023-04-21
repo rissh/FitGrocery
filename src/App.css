@@ -26,3 +26,64 @@
   margin: 0px;
   padding: 0px;
 }
+
+.goback {
+  background-color: var(--col1);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 10px 0px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  min-width: 100px;
+}
+
+.goback svg {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.stylenone {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainhead1 {
+  color: var(--col1);
+  font-size: 30px;
+  font-weight: 300;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.mainbutton1 {
+  background: none;
+  border: 1px solid var(--col1);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 1rem;
+  cursor: pointer;
+  color: var(--col1);
+}
+
+.mainbutton1:hover {
+  background-color: var(--col1);
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .mainhead1 {
+    font-size: 20px;
+  }
+}
