@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import payImg from "../../ASSETS/pay.png";
 import logo from "../../ASSETS/logo.png";
 import social from "../../ASSETS/social.png";
@@ -18,15 +19,23 @@ const Footer = () => {
         </div>
         <div className="AboutUs">
           <h3>About Us</h3>
-          <p>About us</p>
-          <p>Contact us</p>
+          <Link to="/about" className="stylenone">
+            <p>About us</p>
+          </Link>
+          <Link to="/contact" className="stylenone">
+            <p>Contact us</p>
+          </Link>
           <p>About team</p>
           <p>Customer Support</p>
         </div>
         <div className="OurInfo">
           <h3>Our Information</h3>
-          <p>Privacy policy update</p>
-          <p>Terms & conditions</p>
+          <Link to="/privacypolicy" className="stylenone">
+            <p>Privacy policy</p>
+          </Link>
+          <Link to="/termsandcondition" className="stylenone">
+            <p>Terms & conditions</p>
+          </Link>
           <p>Return Policy</p>
           <p>Site Map</p>
         </div>

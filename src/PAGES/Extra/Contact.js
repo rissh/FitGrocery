@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import SingleBanner from "../../COMPONENTS/Banners/SingleBanner";
 import FooterBanner from "../../COMPONENTS/Footer/FooterBanner";
@@ -7,6 +7,9 @@ import "./ExtraPages.css";
 
 const Contact = () => {
   const [rating, setrating] = React.useState(0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="ExtraPage">
       <Navbar reloadnavbar={false} />
