@@ -86,10 +86,10 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 1200px */
 
 @media screen and (max-width: 1200px) {
-  .yourorderstable thead {
+  .YourOrdersTable thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -99,13 +99,13 @@
     position: absolute;
     width: 1px;
   }
-  .yourorderstable tr {
+  .YourOrdersTable tr {
     display: block;
     margin-bottom: 0.625em;
     border: none;
   }
 
-  .yourorderstable tr td {
+  .YourOrdersTable tr td {
     border: none;
     border-radius: 0px;
     display: block;
@@ -115,7 +115,7 @@
     justify-content: space-between;
   }
 
-  .yourorderstable td::before {
+  .YourOrdersTable td::before {
     content: attr(data-label);
   }
 }

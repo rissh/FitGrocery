@@ -42,19 +42,19 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 800px */
 
 @media (max-width: 800px) {
-  .usersidebar span {
+  .UserSidebar span {
     font-size: 12px;
   }
 }
 
 /**/
-/**/
+/* Responsiveness : 500px */
 
 @media (max-width: 500px) {
-  .usersidebar {
+  .UserSidebar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -62,27 +62,27 @@
     justify-content: center;
     padding: 10px;
   }
-  .usersidebar .s1,
-  .usersidebar .s2 {
+  .UserSidebar .Section1,
+  .UserSidebar .Section2 {
     display: flex;
     align-items: center;
     gap: 2px;
     padding: 3px;
   }
-  .usersidebar .s1 {
+  .UserSidebar .Section1 {
     background-color: white;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     padding: 5px 20px;
   }
-  .usersidebar .s2 {
+  .UserSidebar .Section2 {
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     padding: 5px 20px;
   }
-  .usersidebar span {
+  .UserSidebar span {
     font-size: 12px;
   }
 }

@@ -30,10 +30,10 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 1000px */
 
 @media (max-width: 1000px) {
-  .userprofile .userprofilein .left {
+  .UserProfile .MainContainer .LeftContainer {
     width: 30%;
     /* background-color: aqua; */
     border: 1px solid rgb(207, 207, 207);
@@ -41,7 +41,7 @@
     min-height: 50vh;
   }
 
-  .userprofilein {
+  .MainContainer {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -51,17 +51,17 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 1000px */
 
 @media (max-width: 1000px) {
-  .userprofile .userprofilein .left {
+  .UserProfile .MainContainer .LeftContainer {
     width: 30%;
     /* background-color: aqua; */
     border: 1px solid rgb(207, 207, 207);
     border-radius: 5px;
     min-height: 50vh;
   }
-  .userprofile .userprofilein .right {
+  .UserProfile .MainContainer .RightContainer {
     width: 68%;
     /* background-color: aqua; */
     border: 1px solid rgb(207, 207, 207);
@@ -69,7 +69,7 @@
     min-height: 50vh;
   }
 
-  .userprofilein {
+  .MainContainer {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -94,10 +94,15 @@
     }
 } */
 
-/**/
+/* Responsiveness : 500px */
 
 @media (max-width: 500px) {
-  .userprofilein {
+  .UserProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MainContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -106,7 +111,7 @@
     gap: 20px;
   }
 
-  .userprofile .userprofilein .left {
+  .UserProfile .MainContainer .LeftContainer {
     width: 97%;
     /* background-color: aqua; */
     border: 1px solid rgb(207, 207, 207);
@@ -116,7 +121,7 @@
     min-height: 0;
   }
 
-  .userprofile .userprofilein .right {
+  .UserProfile .MainContainer .RightContainer {
     width: 97%;
     /* background-color: aqua; */
     border: 1px solid rgb(207, 207, 207);

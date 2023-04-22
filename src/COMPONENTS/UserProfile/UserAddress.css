@@ -119,10 +119,10 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 1000px */
 
 @media (max-width: 1000px) {
-  .useraddress .AddButton {
+  .UserAddress .AddButton {
     width: 40px;
     height: 40px;
     background-color: var(--col1);
@@ -139,7 +139,7 @@
     flex-direction: column;
   }
 
-  .addressin .address {
+  .SaveAddress .Address {
     height: auto;
     align-self: center;
     width: 97%;
@@ -155,7 +155,7 @@
     gap: 5px;
   }
 
-  .addressin .address .delbtn {
+  .SaveAddress .Address .DeleteButton {
     background-color: var(--col1);
     color: white;
     border: none;
@@ -171,17 +171,17 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 900px */
 
 @media (max-width: 900px) {
-  .useraddress .form {
+  .UserAddress .form {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 10px 20px;
   }
 
-  .useraddress .form .form-group {
+  .UserAddress .form .form-group {
     display: flex;
     flex-direction: column;
     width: 97%;
