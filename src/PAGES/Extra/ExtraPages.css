@@ -225,63 +225,63 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 1500px */
 
 @media (max-width: 1500px) {
-  .pgcommon {
+  .common {
     width: 100%;
     margin: 0px;
     padding: 30px;
   }
 
-  .pgcommon img {
+  .common img {
     width: 40%;
   }
 
-  .pgcommon div {
+  .common div {
     width: 60%;
   }
 
-  .pgcommon div h1 {
+  .common div h1 {
     font-size: 40px;
   }
 
-  .pgcommon div p {
+  .common div p {
     font-size: 20px;
   }
 
-  .extrapage .faqcontainer {
+  .ExtraPage .FaqContainer {
     width: 90%;
   }
 }
 
 /**/
-/**/
+/* Responsiveness : 1000px */
 
 @media (max-width: 1000px) {
-  .pgcommon {
+  .common {
     width: 100%;
     margin: 0px;
     padding: 30px;
   }
 
-  .pgcommon img {
+  .common img {
     width: 50%;
   }
 
-  .pgcommon div {
+  .common div {
     width: 50%;
   }
 
-  .pgcommon div h1 {
+  .common div h1 {
     font-size: 40px;
   }
 
-  .pgcommon div p {
+  .common div p {
     font-size: 16px;
   }
 
-  .extrapageform {
+  .ExtraPageForm {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -292,20 +292,20 @@
     gap: 0px;
   }
 
-  .extrapageform .fromgroup {
+  .ExtraPageForm .fromgroup {
     display: flex;
     flex-direction: column;
     margin: 5px 0px;
     /* background-color: aqua; */
   }
 
-  .extrapageform div label {
+  .ExtraPageForm div label {
     font-size: 15px;
     font-weight: 600;
     color: var(--col1);
   }
 
-  .extrapageform div input {
+  .ExtraPageForm div input {
     width: 100%;
     height: 40px;
     border: 1px solid var(--col1);
@@ -314,7 +314,7 @@
     margin-bottom: 10px;
   }
 
-  .extrapageform div textarea {
+  .ExtraPageForm div textarea {
     width: 100%;
     height: 100px;
     border: 1px solid var(--col1);
@@ -323,7 +323,7 @@
     margin-bottom: 10px;
   }
 
-  .extrapageform button {
+  .ExtraPageForm button {
     width: 200px;
     height: 50px;
     border: none;
@@ -335,7 +335,7 @@
     margin: 20px 0px;
   }
 
-  .extrapage .formheading {
+  .ExtraPage .formheading {
     color: var(--col1);
     margin: 0 0 10px 0;
     padding: 0;
@@ -346,35 +346,35 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 800px */
 
 @media (max-width: 800px) {
-  .pgcommon {
+  .common {
     width: 100%;
     margin: 0px;
     padding: 30px;
     flex-direction: column;
   }
 
-  .pgcommon img {
+  .common img {
     width: 90%;
   }
 
-  .pgcommon div {
+  .common div {
     width: 90%;
   }
 
-  .pgcommon div h1 {
+  .common div h1 {
     font-size: 40px;
     text-align: center;
   }
 
-  .pgcommon div p {
+  .common div p {
     font-size: 16px;
     text-align: center;
   }
 
-  .extrapageform {
+  .ExtraPageForm {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -384,20 +384,20 @@
     align-self: center;
   }
 
-  .extrapageform .rating {
+  .ExtraPageForm .rating {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 10px 0px;
   }
 
-  .extrapageform .rating .starinactive {
+  .ExtraPageForm .rating .starinactive {
     color: lightgray;
     width: 25px;
     height: 25px;
     cursor: pointer;
   }
-  .extrapageform .rating .staractive {
+  .ExtraPageForm .rating .staractive {
     color: gold;
     width: 25px;
     height: 25px;
@@ -407,10 +407,10 @@
 }
 
 /**/
-/**/
+/* Responsiveness : 600px */
 
 @media (max-width: 600px) {
-  .pgcont1 {
+  .Container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +421,7 @@
     text-align: center;
     margin: 30px 0px;
   }
-  .pgcont1 h3 {
+  .Container h2 {
     font-size: 20px;
     font-weight: 500;
     color: var(--col1);
@@ -431,7 +431,7 @@
     letter-spacing: 1px;
   }
 
-  .pgcont1 p {
+  .Container p {
     font-size: 15px;
     font-weight: 400;
     color: rgb(155, 155, 155);
@@ -441,16 +441,16 @@
     margin: 0px;
   }
 
-  .extrapage .faqcontainer {
+  .ExtraPage .FaqContainer {
     width: 97%;
     /* background-color: aqua; */
     padding: 20px;
   }
-  .extrapage .faqcontainer .faqhead h1 {
+  .ExtraPage .FaqContainer .FAQHead h1 {
     font-size: 17px;
   }
 
-  .extrapage .faqcontainer .faqbody p {
+  .ExtraPage .FaqContainer .FAQBody p {
     font-size: 13px;
   }
 }

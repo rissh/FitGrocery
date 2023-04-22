@@ -284,7 +284,7 @@ const Navbar = ({ reloadnavbar }) => {
                   <Dropdown.Item href="/privacypolicy">
                     Privacy Policy
                   </Dropdown.Item>
-                  <Dropdown.Item href="/termsandconditions">
+                  <Dropdown.Item href="/termsandcondition">
                     Terms & Conditions
                   </Dropdown.Item>
                 </Dropdown.Menu>
