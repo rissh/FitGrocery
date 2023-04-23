@@ -1,0 +1,207 @@
+/* */
+.OrderSuccessful {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.499);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.InvoiceContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  height: 80vh;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+.InvoiceContainer::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+
+.InvoiceContainer::-webkit-scrollbar-thumb {
+  background-color: var(--col1);
+  border-radius: 5px;
+}
+
+.CloseButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 0.8;
+  border: none;
+  outline: none;
+}
+
+.CloseButton:hover {
+  background-color: var(--col1);
+  color: white;
+}
+/* */
+
+/* */
+
+.InvoiceContainer .Part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.InvoiceContainer .Part1 h2 {
+  text-align: center;
+}
+
+.InvoiceContainer .Part1 svg {
+  width: 100px;
+  height: 100px;
+  color: var(--col1);
+}
+
+.InvoiceContainer .Part2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+}
+
+.InvoiceContainer .Part2 h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--col1);
+  margin-top: 10px;
+  width: 100%;
+}
+
+.InvoiceContainer .Part2 div {
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.InvoiceContainer .Part2 div p {
+  width: 45%;
+}
+
+.InvoiceContainer .Part2 div p:first-child {
+  font-weight: 300;
+  color: gray;
+  font-size: 15px;
+}
+
+.InvoiceContainer .Part2 div p:last-child {
+  font-weight: 600;
+  color: gray;
+  font-size: 15px;
+}
+
+.OrderSuccessful .Part4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.OrderSuccessful .Part4 div {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.InvoiceContainer .Part3 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.InvoiceContainer .Part3 table thead tr {
+  background-color: var(--col1);
+  color: white;
+}
+
+.InvoiceContainer .Part3 table thead tr th {
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.InvoiceContainer .Part3 table tr td {
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: gray;
+}
+
+.InvoiceContainer .Part3 table p {
+  margin: 0px;
+  font-size: 15px;
+}
+
+/* */
+/* */
+
+@media screen and (max-width: 700px) {
+  .InvoiceContainer .Part1 h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .InvoiceContainer .Part2 div {
+    width: 100%;
+  }
+  .InvoiceContainer .Part4 div {
+    width: 100%;
+  }
+
+  .InvoiceContainer .Part4 p {
+    font-size: 10px;
+  }
+  .InvoiceContainer .Part3 table p {
+    font-size: 10px;
+  }
+
+  .InvoiceContainer .Part2 div p {
+    width: 45%;
+  }
+
+  .InvoiceContainer .Part2 div p:first-child {
+    font-weight: 300;
+    color: var(--col2);
+    font-size: 10px;
+  }
+
+  .InvoiceContainer .Part2 div p:last-child {
+    font-weight: 600;
+    color: var(--col2);
+    font-size: 10px;
+    text-align: right;
+  }
+}
+
+/* */
