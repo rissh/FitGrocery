@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# FitGrocery
+
+This repository conatines all the code that is required for building this project FitGrocery a Grocery website.
+
+## Author
+
+- [LinkedIn](https://www.linkedin.com/in/rishikesh-jagadale-331812207/)
+- [Github](https://github.com/rissh)
+- [Dockerhub](https://hub.docker.com/u/littlemonster23)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
