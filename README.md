@@ -6,7 +6,7 @@ This repository conatines all the code that is required for building this projec
 
 - [LinkedIn](https://www.linkedin.com/in/rishikesh-jagadale-331812207/)
 - [Github](https://github.com/rissh)
-- [Dockerhub](https://hub.docker.com/u/littlemonster23)
+- [Live](https://grocery-app-rissh.vercel.app/)
 
 ## Getting Started with Create React App
 
