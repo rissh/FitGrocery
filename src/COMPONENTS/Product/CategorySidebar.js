@@ -10,42 +10,42 @@ const CategorySidebar = () => {
     {
       id: 1,
       CategoryImage: img1,
-      CategoryName: "Category 1",
+      CategoryName: "Fruits",
     },
     {
       id: 2,
       CategoryImage: img2,
-      CategoryName: "Category 2",
+      CategoryName: "Vegetables",
     },
     {
       id: 3,
       CategoryImage: img3,
-      CategoryName: "Category 3",
+      CategoryName: "Meat and Poultry",
     },
     {
       id: 4,
       CategoryImage: img4,
-      CategoryName: "Category 4",
+      CategoryName: "Dairy and Eggs",
     },
     {
       id: 5,
       CategoryImage: img1,
-      CategoryName: "Category 5",
+      CategoryName: "Bakery and Bread",
     },
     {
       id: 6,
       CategoryImage: img2,
-      CategoryName: "Category 6",
+      CategoryName: "Beverages",
     },
     {
       id: 7,
       CategoryImage: img3,
-      CategoryName: "Category 7",
+      CategoryName: "Snacks & Sweets",
     },
     {
       id: 8,
       CategoryImage: img4,
-      CategoryName: "Category 8",
+      CategoryName: "Packaged Goods",
     },
   ];
   return (

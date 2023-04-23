@@ -33,19 +33,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .HomeCategories .HomeContainer .content h1 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 800;
   margin: 0;
   padding: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .HomeCategories .HomeContainer .content p {
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 500;
   margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .HomeCategories .HomeContainer:nth-child(1) {
@@ -55,7 +60,7 @@
 
 .HomeCategories .HomeContainer:nth-child(2) {
   background-color: #ff9393;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .HomeCategories .HomeContainer:nth-child(3) {

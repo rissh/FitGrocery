@@ -1,3 +1,4 @@
+//
 import React, { useEffect } from "react";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import SingleBanner from "../../COMPONENTS/Banners/SingleBanner";
@@ -5,7 +6,7 @@ import FooterBanner from "../../COMPONENTS/Footer/FooterBanner";
 import Footer from "../../COMPONENTS/Footer/Footer";
 
 import "./ExtraPages.css";
-
+//
 const PrivacyPolicy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

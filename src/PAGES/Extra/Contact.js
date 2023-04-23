@@ -1,9 +1,11 @@
+//
 import React, { useEffect } from "react";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import SingleBanner from "../../COMPONENTS/Banners/SingleBanner";
 import FooterBanner from "../../COMPONENTS/Footer/FooterBanner";
 import Footer from "../../COMPONENTS/Footer/Footer";
 import "./ExtraPages.css";
+//
 
 const Contact = () => {
   const [rating, setrating] = React.useState(0);
@@ -23,13 +25,14 @@ const Contact = () => {
         <div>
           <h1>Why We</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            At FitGrocery, we believe that everyone should have access to
+            high-quality groceries at affordable prices. We are passionate about
+            providing our customers with fresh and healthy food options that are
+            sourced from local farms and suppliers. Our team is dedicated to
+            ensuring that every customer has a positive shopping experience,
+            from browsing our website to receiving their order. We strive to
+            make grocery shopping convenient and hassle-free, so you can focus
+            on living your best life.
           </p>
         </div>
       </div>
