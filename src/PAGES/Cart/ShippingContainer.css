@@ -1,3 +1,5 @@
+/* */
+
 .shippingContainer {
   display: flex;
   flex-direction: column;
@@ -110,3 +112,23 @@
   cursor: pointer;
   color: white;
 }
+
+/* */
+/* Responsiveness : 800px */
+
+@media screen and (max-width: 800px) {
+  .shippingContainer {
+    width: 95%;
+  }
+  .shippingContainer .previousAddress {
+    width: 95%;
+  }
+  .shippingContainer .selectDate {
+    width: 95%;
+  }
+  .shippingContainer .shippingAddress {
+    width: 95%;
+  }
+}
+
+/* */

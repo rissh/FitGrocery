@@ -19,3 +19,17 @@
 }
 
 /**/
+/* Responsiveness : 800px */
+
+@media screen and (max-width: 800px) {
+  .orderContainer {
+    width: 95%;
+  }
+
+  .orderContainer svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* */

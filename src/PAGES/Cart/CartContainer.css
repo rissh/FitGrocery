@@ -1,4 +1,4 @@
-/**/
+/* */
 
 .cartContainer {
   display: flex;
@@ -127,3 +127,64 @@
   margin: 0px;
   padding: 0px;
 }
+
+/* */
+/* Responsiveness : 900px */
+
+@media screen and (max-width: 900px) {
+  .cartContainer {
+    width: 95%;
+  }
+
+  .cartContainer table .cartitemrow td {
+    font-size: 14px;
+  }
+
+  .cartContainer .cartproduct {
+    width: fit-content;
+  }
+}
+
+/* */
+/* Responsiveness : 600px */
+
+@media screen and (max-width: 600px) {
+  .cartContainer table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .cartContainer table tr {
+    /* border-bottom: 3px solid #ddd; */
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .cartContainer table td {
+    /* border-bottom: 1px solid #ddd; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+/* */

@@ -311,7 +311,7 @@ const Cart = () => {
                   {cartdata.map((item, index) => {
                     return (
                       <tr key={index} className="cartitemrow">
-                        <td>
+                        <td data-label="Product">
                           <div
                             className="cartproduct"
                             onClick={() => {
@@ -326,7 +326,7 @@ const Cart = () => {
                           </div>
                         </td>
 
-                        <td>
+                        <td data-label="Quantity">
                           <div className="quantity">
                             <button
                               className="minus"
@@ -365,7 +365,7 @@ const Cart = () => {
                           </div>
                         </td>
 
-                        <td>
+                        <td data-label="Price">
                           <p>
                             ${" "}
                             {item.productdata.SalesPrice
@@ -374,7 +374,7 @@ const Cart = () => {
                           </p>
                         </td>
 
-                        <td>
+                        <td data-label="Total">
                           <p>
                             ${" "}
                             {(
@@ -383,7 +383,7 @@ const Cart = () => {
                           </p>
                         </td>
 
-                        <td>
+                        <td data-label="Remove">
                           <div
                             className="delbtn"
                             onClick={() => {

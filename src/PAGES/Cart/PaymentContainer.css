@@ -1,4 +1,4 @@
-/**/
+/* */
 
 .paymentContainer {
   display: flex;
@@ -32,12 +32,14 @@
   margin: 10px;
   padding: 20px;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .paymentTypes .paymentOption img {
   width: 80px;
   height: 30px;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .paymentAgreement {
@@ -138,3 +140,28 @@
     background-position: 0 0;
   }
 }
+
+/* */
+/* Responsiveness : 800px */
+
+@media screen and (max-width: 800px) {
+  .paymentContainer {
+    width: 95%;
+  }
+
+  .paymentTypes {
+    flex-direction: column;
+  }
+
+  .paymentTypes .paymentOption {
+    width: 90%;
+    cursor: pointer;
+  }
+
+  .paymentContainer .glow-on-hover {
+    width: 90%;
+    cursor: pointer;
+  }
+}
+
+/* */

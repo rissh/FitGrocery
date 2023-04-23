@@ -165,7 +165,7 @@
 }
 
 /* */
-/* */
+/* Responsiveness : 700px */
 
 @media screen and (max-width: 700px) {
   .InvoiceContainer .Part1 h2 {
@@ -192,13 +192,13 @@
 
   .InvoiceContainer .Part2 div p:first-child {
     font-weight: 300;
-    color: var(--col2);
+    color: gray;
     font-size: 10px;
   }
 
   .InvoiceContainer .Part2 div p:last-child {
     font-weight: 600;
-    color: var(--col2);
+    color: gray;
     font-size: 10px;
     text-align: right;
   }

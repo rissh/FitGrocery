@@ -52,4 +52,27 @@
   color: var(--col1);
   cursor: pointer;
 }
-/**/
+
+/* */
+/* Responsiveness : 800px */
+
+@media screen and (max-width: 800px) {
+  .CartContainer .progress {
+    width: 95%;
+  }
+}
+
+/* */
+/* Responsiveness : 400px */
+
+@media screen and (max-width: 400px) {
+  .CartContainer .progress svg {
+    width: 20px;
+    height: 20px;
+  }
+  .CartContainer .progress span {
+    font-size: 12px;
+  }
+}
+
+/* */
