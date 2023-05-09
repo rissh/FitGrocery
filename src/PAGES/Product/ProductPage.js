@@ -8,14 +8,6 @@ import img3 from "../../ASSETS/Images/3.png";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import Footer from "../../COMPONENTS/Footer/Footer";
 import FooterBanner from "../../COMPONENTS/Footer/FooterBanner";
-import img11 from "../../ASSETS/Products/1.png";
-import img12 from "../../ASSETS/Products/2.png";
-import img13 from "../../ASSETS/Products/3.png";
-import img14 from "../../ASSETS/Products/4.png";
-import img15 from "../../ASSETS/Products/5.png";
-import img16 from "../../ASSETS/Products/6.png";
-import img17 from "../../ASSETS/Products/7.png";
-import img18 from "../../ASSETS/Products/8.png";
 import ProductSlider from "../../COMPONENTS/Product/ProductSlider";
 
 const ProductPage = () => {

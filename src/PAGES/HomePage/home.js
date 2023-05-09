@@ -9,21 +9,25 @@ import img1 from "../../ASSETS/Images/1.png";
 import img2 from "../../ASSETS/Images/2.png";
 import img3 from "../../ASSETS/Images/3.png";
 //
-//import prod1 from "../../ASSETS/Products/1.png";
-//import prod2 from "../../ASSETS/Products/2.png";
-//import prod3 from "../../ASSETS/Products/3.png";
-//import prod4 from "../../ASSETS/Products/4.png";
-//import prod5 from "../../ASSETS/Products/5.png";
-//import prod6 from "../../ASSETS/Products/6.png";
-//import prod7 from "../../ASSETS/Products/7.png";
-//import prod8 from "../../ASSETS/Products/8.png";
-//import prod9 from "../../ASSETS/Products/9.png";
-//import prod10 from "../../ASSETS/Products/10.png";
-//import prod11 from "../../ASSETS/Products/11.png";
-//import prod12 from "../../ASSETS/Products/12.png";
-//import prod13 from "../../ASSETS/Products/13.png";
-//import prod14 from "../../ASSETS/Products/14.png";
-//import prod15 from "../../ASSETS/Products/15.png";
+import prod1A from "../../ASSETS/Products/1A.png";
+import prod1B from "../../ASSETS/Products/1B.png";
+import prod1C from "../../ASSETS/Products/1C.png";
+import prod2A from "../../ASSETS/Products/2A.png";
+import prod2B from "../../ASSETS/Products/2B.png";
+import prod2C from "../../ASSETS/Products/2C.png";
+import prod3A from "../../ASSETS/Products/3A.png";
+import prod3B from "../../ASSETS/Products/3B.png";
+import prod3C from "../../ASSETS/Products/3C.png";
+import prod4A from "../../ASSETS/Products/4A.png";
+import prod4B from "../../ASSETS/Products/4B.png";
+import prod4C from "../../ASSETS/Products/4C.png";
+import prod5A from "../../ASSETS/Products/5A.png";
+import prod5B from "../../ASSETS/Products/5B.png";
+import prod5C from "../../ASSETS/Products/5C.png";
+import prod6A from "../../ASSETS/Products/6A.png";
+import prod6B from "../../ASSETS/Products/6B.png";
+import prod6C from "../../ASSETS/Products/6C.png";
+
 //
 import ProductSlider from "../../COMPONENTS/Product/ProductSlider";
 
