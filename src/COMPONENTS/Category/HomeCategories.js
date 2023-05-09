@@ -1,9 +1,9 @@
 import React from "react";
 import "./HomeCategories.css";
-import img1 from "../../ASSETS/Images/1.png";
-import img2 from "../../ASSETS/Images/2.png";
-import img3 from "../../ASSETS/Images/3.png";
-import img4 from "../../ASSETS/Images/4.png";
+import img1 from "../../ASSETS/Home Category/1.png";
+import img2 from "../../ASSETS/Home Category/2.png";
+import img3 from "../../ASSETS/Home Category/3.png";
+import img4 from "../../ASSETS/Home Category/4.png";
 
 const HomeCategories = () => {
   return (
@@ -11,7 +11,7 @@ const HomeCategories = () => {
       <div className="HomeContainer">
         <img src={img1} alt="image1" />
         <div className="content">
-          <h1>Fruits</h1>
+          <h1>Daily Goods</h1>
           <p> Fresh and delicious fruits delivered to your door </p>
         </div>
       </div>

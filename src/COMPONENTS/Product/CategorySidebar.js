@@ -1,9 +1,13 @@
 import React from "react";
 import "./CategorySidebar.css";
-import img1 from "../../ASSETS/Images/1.png";
-import img2 from "../../ASSETS/Images/2.png";
-import img3 from "../../ASSETS/Images/3.png";
-import img4 from "../../ASSETS/Images/4.png";
+import img1 from "../../ASSETS/Categories/1.jpeg";
+import img2 from "../../ASSETS/Categories/2.png";
+import img3 from "../../ASSETS/Categories/3.png";
+import img4 from "../../ASSETS/Categories/4.png";
+import img5 from "../../ASSETS/Categories/5.png";
+import img6 from "../../ASSETS/Categories/6.png";
+import img7 from "../../ASSETS/Categories/7.png";
+import img8 from "../../ASSETS/Categories/8.jpeg";
 
 const CategorySidebar = () => {
   const data = [
@@ -29,22 +33,22 @@ const CategorySidebar = () => {
     },
     {
       id: 5,
-      CategoryImage: img1,
+      CategoryImage: img5,
       CategoryName: "Bakery and Bread",
     },
     {
       id: 6,
-      CategoryImage: img2,
+      CategoryImage: img6,
       CategoryName: "Beverages",
     },
     {
       id: 7,
-      CategoryImage: img3,
+      CategoryImage: img7,
       CategoryName: "Snacks & Sweets",
     },
     {
       id: 8,
-      CategoryImage: img4,
+      CategoryImage: img8,
       CategoryName: "Packaged Goods",
     },
   ];
