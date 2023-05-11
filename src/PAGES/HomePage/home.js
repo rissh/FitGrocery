@@ -5,9 +5,6 @@ import FooterBanner from "../../COMPONENTS/Footer/FooterBanner";
 import Footer from "../../COMPONENTS/Footer/Footer";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import ProductSidebar from "../../COMPONENTS/Product/ProductSidebar";
-import img1 from "../../ASSETS/Images/1.png";
-import img2 from "../../ASSETS/Images/2.png";
-import img3 from "../../ASSETS/Images/3.png";
 //
 import prod1A from "../../ASSETS/Products/1A.png";
 import prod1B from "../../ASSETS/Products/1B.png";
@@ -27,6 +24,12 @@ import prod5C from "../../ASSETS/Products/5C.png";
 import prod6A from "../../ASSETS/Products/6A.png";
 import prod6B from "../../ASSETS/Products/6B.png";
 import prod6C from "../../ASSETS/Products/6C.png";
+import prod7A from "../../ASSETS/Products/7A.png";
+import prod7B from "../../ASSETS/Products/7B.png";
+import prod7C from "../../ASSETS/Products/7C.png";
+import prod8A from "../../ASSETS/Products/8A.png";
+import prod8B from "../../ASSETS/Products/8B.png";
+import prod8C from "../../ASSETS/Products/8C.png";
 
 //
 import ProductSlider from "../../COMPONENTS/Product/ProductSlider";
@@ -474,6 +477,138 @@ const home = () => {
           Date: "2022-01-10",
           Review:
             "Decent garlic, but a bit overpriced compared to what I can get at my local grocery store.",
+        },
+      ],
+    },
+    {
+      ProductId: 7,
+      ProductName: "Carrot",
+      ProductDescription:
+        "Carrot is a root vegetable, usually orange in colour, though purple, black, red, white, and yellow varieties also exist. It has a crisp texture when fresh. The most commonly eaten part of a carrot is the taproot, although the greens are sometimes eaten as well.",
+      ProductImage: [
+        {
+          id: 1,
+          image: prod7A,
+        },
+        {
+          id: 2,
+          image: prod7B,
+        },
+        {
+          id: 3,
+          image: prod7C,
+        },
+      ],
+      ProductCode: "CRT1",
+      ProductCategory: "Vegetables",
+      ProductSubCategory: "Root Vegetables",
+      ProductBrand: "Farm Fresh",
+      ProductColor: "Orange",
+      ProductSize: "Medium",
+      ProductWeight: "500g",
+      ProductMaterial: "Vegetable",
+      ProductQuantity: 20,
+      ProductUnit: "Kg",
+      ProductPrice: 40,
+      SalesPrice: 35,
+      ProductDiscount: 5,
+      ProductDiscountType: "Percentage",
+      ProductTax: 5,
+      ProductTaxType: "Percentage",
+      ProductShippingCharge: 10,
+      ProductShippingChargeType: "Percentage",
+      ProductShippingTime: "2-3 days",
+      ProductShippingTimeType: "Days",
+      ProductShippingLocation: "India",
+      ProductShippingLocationType: "Country",
+      ProductShippingReturnPolicy: "30 days",
+      ProductShippingReturnPolicyType: "Days",
+      ProductShippingReturnPolicyDescription:
+        "Return the product in its original condition within 30 days of delivery for a full refund.",
+      ProductShippingReturnPolicyDescriptionType: "Text",
+      ProductReviews: [
+        {
+          ReviewId: 1,
+          Name: "Jane Doe",
+          Email: "jane@example.com",
+          Rating: 4,
+          Date: "2022-05-01",
+          Review: "I ordered these carrots and they were fresh and tasty!",
+        },
+        {
+          ReviewId: 2,
+          Name: "John Smith",
+          Email: "john@example.com",
+          Rating: 5,
+          Date: "2022-05-03",
+          Review:
+            "I'm very happy with my purchase of these carrots. They were delivered quickly and were of excellent quality.",
+        },
+      ],
+    },
+    {
+      ProductId: 8,
+      ProductName: "Radish",
+      ProductDescription:
+        "Radish is a root vegetable that is crispy, crunchy, and slightly sweet. It is rich in vitamins and minerals, and is a good source of fiber.",
+      ProductImage: [
+        {
+          id: 1,
+          image: prod8A,
+        },
+        {
+          id: 2,
+          image: prod8B,
+        },
+        {
+          id: 3,
+          image: prod8C,
+        },
+      ],
+      ProductCode: "RDSH-001",
+      ProductCategory: "Vegetables",
+      ProductSubCategory: "Root Vegetables",
+      ProductBrand: "Fresh Farms",
+      ProductColor: "Red",
+      ProductSize: "Small",
+      ProductWeight: "100g",
+      ProductMaterial: "N/A",
+      ProductQuantity: 50,
+      ProductUnit: "Bunch",
+      ProductPrice: 3,
+      SalesPrice: 1.5,
+      ProductDiscount: 50,
+      ProductDiscountType: "Amount",
+      ProductTax: 0.1,
+      ProductTaxType: "Percentage",
+      ProductShippingCharge: 0,
+      ProductShippingChargeType: "Amount",
+      ProductShippingTime: "1-2 days",
+      ProductShippingTimeType: "Days",
+      ProductShippingLocation: "Domestic",
+      ProductShippingLocationType: "Country",
+      ProductShippingReturnPolicy: "30-day return policy",
+      ProductShippingReturnPolicyType: "Days",
+      ProductShippingReturnPolicyDescription:
+        "We offer a 30-day return policy for all products. If you are not satisfied with your purchase, you can return it for a full refund.",
+      ProductShippingReturnPolicyDescriptionType: "Text",
+      ProductReviews: [
+        {
+          ReviewId: 1,
+          Name: "John Doe",
+          Email: "johndoe@example.com",
+          Rating: 4,
+          Date: "2022-04-01",
+          Review: "I really enjoyed the radishes! They were fresh and tasty.",
+        },
+        {
+          ReviewId: 2,
+          Name: "Jane Smith",
+          Email: "janesmith@example.com",
+          Rating: 3,
+          Date: "2022-04-15",
+          Review:
+            "The radishes were okay, but they weren't as fresh as I was hoping.",
         },
       ],
     },

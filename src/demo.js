@@ -173,7 +173,7 @@ const products = [
   },
   {
     ProductId: 3,
-    ProductName: "Fresh Green Cabbage",
+    ProductName: "Cabbage",
     ProductDescription:
       "This fresh green cabbage is perfect for making salads, coleslaw, and other delicious dishes. It is grown locally without the use of pesticides and is hand-picked for maximum freshness.",
     ProductImage: [
@@ -249,7 +249,7 @@ const products = [
   },
   {
     ProductId: 4,
-    ProductName: "Fresh Brinjal",
+    ProductName: "Brinjal",
     ProductDescription:
       "Fresh and healthy brinjals handpicked from the farm. Our brinjals are of premium quality and are perfect for all your cooking needs.",
     ProductImage: [
@@ -461,6 +461,214 @@ const products = [
         Date: "2022-01-10",
         Review:
           "Decent garlic, but a bit overpriced compared to what I can get at my local grocery store.",
+      },
+    ],
+  },
+  {
+    ProductId: 7,
+    ProductName: "Carrot",
+    ProductDescription:
+      "Carrot is a root vegetable, usually orange in colour, though purple, black, red, white, and yellow varieties also exist. It has a crisp texture when fresh. The most commonly eaten part of a carrot is the taproot, although the greens are sometimes eaten as well.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod7A,
+      },
+      {
+        id: 2,
+        image: prod7B,
+      },
+      {
+        id: 3,
+        image: prod7C,
+      },
+    ],
+    ProductCode: "CRT1",
+    ProductCategory: "Vegetables",
+    ProductSubCategory: "Root Vegetables",
+    ProductBrand: "Farm Fresh",
+    ProductColor: "Orange",
+    ProductSize: "Medium",
+    ProductWeight: "500g",
+    ProductMaterial: "Vegetable",
+    ProductQuantity: 20,
+    ProductUnit: "Kg",
+    ProductPrice: 40,
+    SalesPrice: 35,
+    ProductDiscount: 5,
+    ProductDiscountType: "Percentage",
+    ProductTax: 5,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 10,
+    ProductShippingChargeType: "Percentage",
+    ProductShippingTime: "2-3 days",
+    ProductShippingTimeType: "Days",
+    ProductShippingLocation: "India",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "30 days",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription:
+      "Return the product in its original condition within 30 days of delivery for a full refund.",
+    ProductShippingReturnPolicyDescriptionType: "Text",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "Jane Doe",
+        Email: "jane@example.com",
+        Rating: 4,
+        Date: "2022-05-01",
+        Review: "I ordered these carrots and they were fresh and tasty!",
+      },
+      {
+        ReviewId: 2,
+        Name: "John Smith",
+        Email: "john@example.com",
+        Rating: 5,
+        Date: "2022-05-03",
+        Review:
+          "I'm very happy with my purchase of these carrots. They were delivered quickly and were of excellent quality.",
+      },
+    ],
+  },
+  {
+    ProductId: 8,
+    ProductName: "Radish",
+    ProductDescription:
+      "Radish is a root vegetable that is crispy, crunchy, and slightly sweet. It is rich in vitamins and minerals, and is a good source of fiber.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod8A,
+      },
+      {
+        id: 2,
+        image: prod8B,
+      },
+      {
+        id: 3,
+        image: prod8C,
+      },
+    ],
+    ProductCode: "RDSH-001",
+    ProductCategory: "Vegetables",
+    ProductSubCategory: "Root Vegetables",
+    ProductBrand: "Fresh Farms",
+    ProductColor: "Red",
+    ProductSize: "Small",
+    ProductWeight: "100g",
+    ProductMaterial: "N/A",
+    ProductQuantity: 50,
+    ProductUnit: "Bunch",
+    ProductPrice: 2.99,
+    SalesPrice: 2.49,
+    ProductDiscount: 0.5,
+    ProductDiscountType: "Amount",
+    ProductTax: 0.1,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 0,
+    ProductShippingChargeType: "Amount",
+    ProductShippingTime: "1-2 days",
+    ProductShippingTimeType: "Days",
+    ProductShippingLocation: "Domestic",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "30-day return policy",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription:
+      "We offer a 30-day return policy for all products. If you are not satisfied with your purchase, you can return it for a full refund.",
+    ProductShippingReturnPolicyDescriptionType: "Text",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "John Doe",
+        Email: "johndoe@example.com",
+        Rating: 4,
+        Date: "2022-04-01",
+        Review: "I really enjoyed the radishes! They were fresh and tasty.",
+      },
+      {
+        ReviewId: 2,
+        Name: "Jane Smith",
+        Email: "janesmith@example.com",
+        Rating: 3,
+        Date: "2022-04-15",
+        Review:
+          "The radishes were okay, but they weren't as fresh as I was hoping.",
+      },
+    ],
+  },
+  {
+    ProductId: 9,
+    ProductName: "Cucumber",
+    ProductDescription:
+      "Cucumbers are a type of fruit that belong to the gourd family. They are usually eaten raw, either whole or sliced, and are commonly used in salads and sandwiches.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod9A,
+      },
+      {
+        id: 2,
+        image: prod9B,
+      },
+      {
+        id: 3,
+        image: prod9C,
+      },
+    ],
+    ProductCode: "CU9",
+    ProductCategory: "Vegetables",
+    ProductSubCategory: "Cucumbers",
+    ProductBrand: "Fresh Farms",
+    ProductColor: "",
+    ProductSize: "Medium",
+    ProductWeight: "1 lb",
+    ProductMaterial: "",
+    ProductQuantity: 20,
+    ProductUnit: "lb",
+    ProductPrice: 2.99,
+    SalesPrice: 2.49,
+    ProductDiscount: 0,
+    ProductDiscountType: "Fixed",
+    ProductTax: 0,
+    ProductTaxType: "No Tax",
+    ProductShippingCharge: 5.99,
+    ProductShippingChargeType: "Fixed",
+    ProductShippingTime: "2-3 days",
+    ProductShippingTimeType: "Business Days",
+    ProductShippingLocation: "United States",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "30-day return policy",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription:
+      "If you are not satisfied with your purchase, you can return it for a full refund within 30 days.",
+    ProductShippingReturnPolicyDescriptionType: "Description",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "John Doe",
+        Email: "johndoe@example.com",
+        Rating: 4,
+        Date: "2022-03-01",
+        Review:
+          "These cucumbers are fresh and crisp. They're perfect for making salads!",
+      },
+      {
+        ReviewId: 2,
+        Name: "Jane Smith",
+        Email: "janesmith@example.com",
+        Rating: 5,
+        Date: "2022-04-15",
+        Review:
+          "I love these cucumbers! They're great for snacking on and adding to sandwiches.",
+      },
+      {
+        ReviewId: 3,
+        Name: "Bob Johnson",
+        Email: "bobjohnson@example.com",
+        Rating: 3,
+        Date: "2022-05-01",
+        Review:
+          "These cucumbers are okay, but they're a little too bitter for my taste.",
       },
     ],
   },
