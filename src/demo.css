@@ -1,9 +1,8 @@
-/**/
 /* ProductCard Section CSS Start*/
 .Product {
   display: flex;
   width: 250px;
-  height: 330px;
+  height: 300px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +27,7 @@
 }
 
 .Product .Section1 img:hover {
-  transform: scale(1.1);
+  scale: 1.1;
 }
 
 .Product .Section2 {
@@ -129,6 +128,10 @@
   border: none;
   background-color: var(--col1);
   color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
 .Product .Buttons .quantity p {
@@ -150,3 +153,6 @@
   border-radius: 5px;
 }
 /* AddtoCart Section CSS End*/
+
+/**/
+/**/
