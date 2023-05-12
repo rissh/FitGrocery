@@ -17,6 +17,36 @@ import prod5C from "../../ASSETS/Products/5C.png";
 import prod6A from "../../ASSETS/Products/6A.png";
 import prod6B from "../../ASSETS/Products/6B.png";
 import prod6C from "../../ASSETS/Products/6C.png";
+import prod7A from "../../ASSETS/Products/7A.png";
+import prod7B from "../../ASSETS/Products/7B.png";
+import prod7C from "../../ASSETS/Products/7C.png";
+import prod8A from "../../ASSETS/Products/8A.png";
+import prod8B from "../../ASSETS/Products/8B.png";
+import prod8C from "../../ASSETS/Products/8C.png";
+import prod9A from "../../ASSETS/Products/9A.png";
+import prod9B from "../../ASSETS/Products/9B.png";
+import prod9C from "../../ASSETS/Products/9C.png";
+import prod10A from "../../ASSETS/Products/10A.png";
+import prod10B from "../../ASSETS/Products/10B.png";
+import prod10C from "../../ASSETS/Products/10C.png";
+import prod11A from "../../ASSETS/Products/11A.png";
+import prod11B from "../../ASSETS/Products/11B.png";
+import prod11C from "../../ASSETS/Products/11C.png";
+import prod12A from "../../ASSETS/Products/12A.png";
+import prod12B from "../../ASSETS/Products/12B.png";
+import prod12C from "../../ASSETS/Products/12C.png";
+import prod13A from "../../ASSETS/Products/13A.png";
+import prod13B from "../../ASSETS/Products/13B.png";
+import prod13C from "../../ASSETS/Products/13C.png";
+import prod14A from "../../ASSETS/Products/14A.png";
+import prod14B from "../../ASSETS/Products/14B.png";
+import prod14C from "../../ASSETS/Products/14C.png";
+import prod15A from "../../ASSETS/Products/15A.png";
+import prod15B from "../../ASSETS/Products/15B.png";
+import prod15C from "../../ASSETS/Products/15C.png";
+import prod16A from "../../ASSETS/Products/16A.png";
+import prod16B from "../../ASSETS/Products/16B.png";
+import prod16C from "../../ASSETS/Products/16C.png";
 //
 
 const products = [
@@ -669,6 +699,518 @@ const products = [
         Date: "2022-05-01",
         Review:
           "These cucumbers are okay, but they're a little too bitter for my taste.",
+      },
+    ],
+  },
+  {
+    ProductId: 10,
+    ProductName: "Potatoes",
+    ProductDescription:
+      "Potatoes are a starchy root vegetable widely used in Indian cuisine. They are rich in nutrients such as potassium and vitamin C, and can be prepared in a variety of ways, from mashed potatoes to french fries.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod10A,
+      },
+      {
+        id: 2,
+        image: prod10B,
+      },
+      {
+        id: 3,
+        image: prod10C,
+      },
+    ],
+    ProductCode: "P10",
+    ProductCategory: "Vegetables",
+    ProductSubCategory: "Root Vegetables",
+    ProductBrand: "Fresh Farms",
+    ProductColor: "",
+    ProductSize: "",
+    ProductWeight: "1 kg",
+    ProductMaterial: "",
+    ProductQuantity: 20,
+    ProductUnit: "kg",
+    ProductPrice: 30,
+    SalesPrice: 25,
+    ProductDiscount: 5,
+    ProductDiscountType: "Percentage",
+    ProductTax: 5,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 10,
+    ProductShippingChargeType: "Percentage",
+    ProductShippingTime: "3-5 days",
+    ProductShippingTimeType: "Days",
+    ProductShippingLocation: "India",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "Easy Returns",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription: "Return within 7 days",
+    ProductShippingReturnPolicyDescriptionType: "Days",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "Rahul Gupta",
+        Email: "rahul.gupta@example.com",
+        Rating: 5,
+        Date: "2022-04-01",
+        Review:
+          "The potatoes were fresh and of good quality. I used them to make aloo gobi and the dish turned out great.",
+      },
+      {
+        ReviewId: 2,
+        Name: "Priya Singh",
+        Email: "priya.singh@example.com",
+        Rating: 4,
+        Date: "2022-04-05",
+        Review:
+          "The potatoes were slightly on the smaller side, but overall they were good. I made mashed potatoes with them and they were creamy and delicious.",
+      },
+      {
+        ReviewId: 3,
+        Name: "Amit Patel",
+        Email: "amit.patel@example.com",
+        Rating: 3,
+        Date: "2022-04-10",
+        Review:
+          "The potatoes were okay, but I expected them to be larger. They were still usable for making potato curry.",
+      },
+    ],
+  },
+  {
+    ProductId: 11,
+    ProductName: "Tomato",
+    ProductDescription:
+      "Tomato is a juicy, nutritious fruit commonly eaten as a vegetable, is another wonderful gift of the Mayans to the world. This humble vegetable of Central America has seized the attention of millions of health seekers for its incredible nutritional properties. Interestingly, it has more health-benefiting compounds than that of some popular fruits like apple!",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod11A,
+      },
+      {
+        id: 2,
+        image: prod11B,
+      },
+      {
+        id: 3,
+        image: prod11C,
+      },
+    ],
+    ProductCode: "TOM",
+    ProductCategory: "Vegetables",
+    ProductSubCategory: "Tomatoes",
+    ProductBrand: "Local Farms",
+    ProductColor: "Red",
+    ProductSize: "Medium",
+    ProductWeight: "500g",
+    ProductMaterial: "Natural",
+    ProductQuantity: 100,
+    ProductUnit: "kg",
+    ProductPrice: 25,
+    SalesPrice: 20,
+    ProductDiscount: 5,
+    ProductDiscountType: "Percentage",
+    ProductTax: 5,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 10,
+    ProductShippingChargeType: "Fixed",
+    ProductShippingTime: "2-3 days",
+    ProductShippingTimeType: "Business Days",
+    ProductShippingLocation: "India",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "Easy return within 7 days of delivery",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription: "100% refund on returns",
+    ProductShippingReturnPolicyDescriptionType: "Policy",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "Sneha Sharma",
+        Email: "sneha@example.com",
+        Rating: 4,
+        Date: "2022-04-23",
+        Review:
+          "I have been buying these tomatoes for a while now, and they have always been fresh and juicy. Highly recommended.",
+      },
+      {
+        ReviewId: 2,
+        Name: "Rahul Kumar",
+        Email: "rahul@example.com",
+        Rating: 5,
+        Date: "2022-03-17",
+        Review: "The best tomatoes I have ever tasted. So fresh and flavorful!",
+      },
+      {
+        ReviewId: 3,
+        Name: "Anjali Singh",
+        Email: "anjali@example.com",
+        Rating: 3,
+        Date: "2022-01-05",
+        Review: "Decent quality tomatoes, but a bit on the expensive side.",
+      },
+    ],
+  },
+  {
+    ProductId: 12,
+    ProductName: "Pumpkin",
+    ProductDescription:
+      "Pumpkin is a nutrient-dense food that is low in calories but high in vitamins and minerals. It is a great source of fiber, potassium, and vitamin C. Pumpkins are also rich in antioxidants that can help protect your body against damage caused by free radicals.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod12B,
+      },
+      {
+        id: 2,
+        image: prod12A,
+      },
+      {
+        id: 3,
+        image: prod12C,
+      },
+    ],
+    ProductCode: "P15",
+    ProductCategory: "Vegetables",
+    ProductSubCategory: "Gourds",
+    ProductBrand: "Farm Fresh",
+    ProductColor: "Orange",
+    ProductSize: "Large",
+    ProductWeight: "1 kg",
+    ProductMaterial: "Natural",
+    ProductQuantity: 50,
+    ProductUnit: "Piece",
+    ProductPrice: 40,
+    SalesPrice: 30,
+    ProductDiscount: 10,
+    ProductDiscountType: "Percentage",
+    ProductTax: 5,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 10,
+    ProductShippingChargeType: "Percentage",
+    ProductShippingTime: "2-3 days",
+    ProductShippingTimeType: "Days",
+    ProductShippingLocation: "India",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "Easy Returns",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription: "Return within 7 days of delivery",
+    ProductShippingReturnPolicyDescriptionType: "Days",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "Rajesh",
+        Email: "rajesh@example.com",
+        Rating: 4,
+        Date: "2022-03-15",
+        Review: "Fresh and delicious pumpkins. Will definitely order again.",
+      },
+      {
+        ReviewId: 2,
+        Name: "Suman",
+        Email: "suman@example.com",
+        Rating: 5,
+        Date: "2022-02-25",
+        Review: "Great quality and taste. Highly recommended!",
+      },
+      {
+        ReviewId: 3,
+        Name: "Amit",
+        Email: "amit@example.com",
+        Rating: 3,
+        Date: "2022-02-10",
+        Review: "Decent pumpkins, but a bit expensive.",
+      },
+    ],
+  },
+  {
+    ProductId: 13,
+    ProductName: "Onion",
+    ProductDescription:
+      "Onion is a vegetable that belongs to the Allium genus of flowering plants, which also includes garlic and chives. It is rich in nutrients and has been used for centuries for its medicinal properties.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod13B,
+      },
+      {
+        id: 2,
+        image: prod13B,
+      },
+      {
+        id: 3,
+        image: prod13C,
+      },
+    ],
+    ProductCode: "ONI",
+    ProductCategory: "Vegetables",
+    ProductSubCategory: "Bulbs",
+    ProductBrand: "Fresh Farms",
+    ProductColor: "Brown",
+    ProductSize: "Medium",
+    ProductWeight: "500g",
+    ProductMaterial: "",
+    ProductQuantity: 20,
+    ProductUnit: "kg",
+    ProductPrice: 50,
+    SalesPrice: 45,
+    ProductDiscount: 10,
+    ProductDiscountType: "Percentage",
+    ProductTax: 5,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 10,
+    ProductShippingChargeType: "Percentage",
+    ProductShippingTime: "2-3 days",
+    ProductShippingTimeType: "Days",
+    ProductShippingLocation: "All over India",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "Easy Returns",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription:
+      "Return within 7 days of receipt of the product",
+    ProductShippingReturnPolicyDescriptionType: "Days",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "Rahul Gupta",
+        Email: "rahul@example.com",
+        Rating: 4,
+        Date: "2022-01-15",
+        Review: "Good quality onions, worth the price.",
+      },
+      {
+        ReviewId: 2,
+        Name: "Anjali Sharma",
+        Email: "anjali@example.com",
+        Rating: 5,
+        Date: "2022-01-22",
+        Review: "Fresh and tasty onions, very happy with the purchase.",
+      },
+      {
+        ReviewId: 3,
+        Name: "Saurabh Singh",
+        Email: "saurabh@example.com",
+        Rating: 3,
+        Date: "2022-02-01",
+        Review: "Average quality onions, not very fresh.",
+      },
+    ],
+  },
+  {
+    ProductId: 14,
+    ProductName: "Apples",
+    ProductDescription:
+      "Apples are a type of fruit that come in many different colors and varieties. They are a great source of vitamins and nutrients and are often enjoyed as a healthy snack.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod14A,
+      },
+      {
+        id: 2,
+        image: prod14B,
+      },
+      {
+        id: 3,
+        image: prod14C,
+      },
+    ],
+    ProductCode: "APP",
+    ProductCategory: "Fruits",
+    ProductSubCategory: "Pome fruits",
+    ProductBrand: "Fresh Farms",
+    ProductColor: "Red",
+    ProductSize: "Large",
+    ProductWeight: "1kg",
+    ProductMaterial: "",
+    ProductQuantity: 50,
+    ProductUnit: "kg",
+    ProductPrice: 120,
+    SalesPrice: 100,
+    ProductDiscount: 17,
+    ProductDiscountType: "Percentage",
+    ProductTax: 5,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 20,
+    ProductShippingChargeType: "Percentage",
+    ProductShippingTime: "3-4 days",
+    ProductShippingTimeType: "Days",
+    ProductShippingLocation: "All over India",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "Easy Returns",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription:
+      "Return within 10 days of receipt of the product",
+    ProductShippingReturnPolicyDescriptionType: "Days",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "Priya Kumari",
+        Email: "priya@example.com",
+        Rating: 5,
+        Date: "2022-03-15",
+        Review: "Really tasty apples, very satisfied with the purchase.",
+      },
+      {
+        ReviewId: 2,
+        Name: "Rakesh Singh",
+        Email: "rakesh@example.com",
+        Rating: 4,
+        Date: "2022-03-22",
+        Review: "Good quality apples, worth the price.",
+      },
+      {
+        ReviewId: 3,
+        Name: "Amit Gupta",
+        Email: "amit@example.com",
+        Rating: 3,
+        Date: "2022-04-01",
+        Review: "Not as fresh as I expected, but still decent quality.",
+      },
+    ],
+  },
+  {
+    ProductId: 15,
+    ProductName: "Banana",
+    ProductDescription:
+      "Bananas are a popular fruit that are high in fiber, potassium, and vitamins. They are enjoyed raw, cooked, or in various desserts.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod15A,
+      },
+      {
+        id: 2,
+        image: prod15B,
+      },
+      {
+        id: 3,
+        image: prod15C,
+      },
+    ],
+    ProductCode: "BAN",
+    ProductCategory: "Fruits",
+    ProductSubCategory: "Tropical Fruits",
+    ProductBrand: "Organic Farms",
+    ProductColor: "Yellow",
+    ProductSize: "Medium",
+    ProductWeight: "1 kg",
+    ProductMaterial: "",
+    ProductQuantity: 50,
+    ProductUnit: "pieces",
+    ProductPrice: 100,
+    SalesPrice: 90,
+    ProductDiscount: 10,
+    ProductDiscountType: "Percentage",
+    ProductTax: 5,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 15,
+    ProductShippingChargeType: "Percentage",
+    ProductShippingTime: "3-4 days",
+    ProductShippingTimeType: "Days",
+    ProductShippingLocation: "All over India",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "Easy Returns",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription:
+      "Return within 7 days of receipt of the product",
+    ProductShippingReturnPolicyDescriptionType: "Days",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "Amit Patel",
+        Email: "amit@example.com",
+        Rating: 5,
+        Date: "2022-05-10",
+        Review: "Great quality bananas, fresh and delicious.",
+      },
+      {
+        ReviewId: 2,
+        Name: "Priya Singh",
+        Email: "priya@example.com",
+        Rating: 4,
+        Date: "2022-05-12",
+        Review: "Good quality bananas, but some were slightly overripe.",
+      },
+      {
+        ReviewId: 3,
+        Name: "Rajesh Kumar",
+        Email: "rajesh@example.com",
+        Rating: 3,
+        Date: "2022-05-15",
+        Review: "Average quality bananas, some were bruised.",
+      },
+    ],
+  },
+  {
+    ProductId: 16,
+    ProductName: "Watermelon",
+    ProductDescription:
+      "Watermelon is a refreshing summer fruit that is rich in vitamins and minerals. It has a sweet, juicy flesh and a tough outer rind.",
+    ProductImage: [
+      {
+        id: 1,
+        image: prod16A,
+      },
+      {
+        id: 2,
+        image: prod16B,
+      },
+      {
+        id: 2,
+        image: prod16C,
+      },
+    ],
+    ProductCode: "WAT",
+    ProductCategory: "Fruits",
+    ProductSubCategory: "Melons",
+    ProductBrand: "Fresh Farms",
+    ProductColor: "Green",
+    ProductSize: "Large",
+    ProductWeight: "5kg",
+    ProductMaterial: "",
+    ProductQuantity: 10,
+    ProductUnit: "piece",
+    ProductPrice: 80,
+    SalesPrice: 70,
+    ProductDiscount: 12.5,
+    ProductDiscountType: "Percentage",
+    ProductTax: 5,
+    ProductTaxType: "Percentage",
+    ProductShippingCharge: 15,
+    ProductShippingChargeType: "Fixed",
+    ProductShippingTime: "2-3 days",
+    ProductShippingTimeType: "Days",
+    ProductShippingLocation: "All over India",
+    ProductShippingLocationType: "Country",
+    ProductShippingReturnPolicy: "Easy Returns",
+    ProductShippingReturnPolicyType: "Days",
+    ProductShippingReturnPolicyDescription:
+      "Return within 7 days of receipt of the product",
+    ProductShippingReturnPolicyDescriptionType: "Days",
+    ProductReviews: [
+      {
+        ReviewId: 1,
+        Name: "Shreya Patel",
+        Email: "shreya@example.com",
+        Rating: 5,
+        Date: "2022-06-01",
+        Review: "Fresh and delicious watermelon, would definitely recommend.",
+      },
+      {
+        ReviewId: 2,
+        Name: "Rahul Sharma",
+        Email: "rahul@example.com",
+        Rating: 4,
+        Date: "2022-06-10",
+        Review: "Good quality watermelon, but slightly expensive.",
+      },
+      {
+        ReviewId: 3,
+        Name: "Neha Gupta",
+        Email: "neha@example.com",
+        Rating: 3,
+        Date: "2022-06-20",
+        Review: "Average quality watermelon, not very sweet.",
       },
     ],
   },
