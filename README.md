@@ -1,6 +1,6 @@
 # FitGrocery
 
-This repository conatines all the code that is required for building this project FitGrocery a Grocery website.
+This repository contains all the code that is required for building this project FitGrocery a Grocery website.
 
 ## Author
 
